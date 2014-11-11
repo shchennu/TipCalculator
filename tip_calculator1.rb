@@ -1,12 +1,16 @@
-# first we assign our initial variables
-meal_cost = 20.0
-tax_percent = 12
-tip_percent = 20
+
+puts("Enter Meal Cost")
+meal_cost = Float(gets.chomp)
+puts("Enter Tax Percent")
+tax_percent = Float(gets.chomp)
+puts("Enter Tp Percent")
+tip_percent = Float(gets.chomp)
+
  
 # now we compute 
-tax_value = meal_cost * tax_percent/100
+tax_value = meal_cost * tax_percent / 100
 meal_with_tax = meal_cost + tax_value
-tip_value = meal_with_tax * tip_percent/100
+tip_value = meal_with_tax * tip_percent/ 100
 total_cost = meal_with_tax + tip_value
  
  
